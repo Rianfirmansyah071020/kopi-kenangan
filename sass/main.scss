@@ -17,3 +17,115 @@ body {
   background-color: var(--bg);
   color: #fff;
 }
+
+// navbar
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.4rem 7%;
+  background-color: rgba(1, 1, 1, 0.8);
+  border-bottom: 1px solid #5c452d;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 9999;
+
+  .navbar-logo {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #fff;
+    font-style: italic;
+
+    span {
+      color: var(--primary);
+    }
+  }
+
+  .navbar-nav {
+    a {
+      display: inline-block;
+      color: #fff;
+      font-size: 1.2rem;
+      margin: 0.1rem;
+    }
+
+    a:hover {
+      color: var(--primary);
+    }
+
+    a::after {
+      content: "";
+      display: block;
+      padding-bottom: 0.5rem;
+      border-bottom: 0.1rem solid var(--primary);
+      transform: scaleX(0);
+    }
+
+    a:hover::after {
+      transform: scaleX(0.5);
+      transition: 0.2s linear;
+    }
+  }
+
+  .navbar-extra {
+    a {
+      color: #fff;
+      margin: 0 0.5rem;
+    }
+
+    a:hover {
+      color: var(--primary);
+    }
+  }
+}
+
+#hamburger-menu {
+  display: none;
+}
+
+// media Queries
+
+// laptop
+@media (max-width: 1366px) {
+  html {
+    font-size: 75%;
+  }
+}
+
+// tablet
+@media (max-width: 768px) {
+  html {
+    font-size: 65.5%;
+  }
+
+  #hamburger-menu {
+    display: inline-block;
+    transition: 0.5s ease-in;
+  }
+
+  .navbar-nav {
+    position: absolute;
+    top: 100%;
+    right: -100%;
+    width: 30rem;
+    height: 100vh;
+    background-color: #fff;
+    transition: 0.3s;
+  }
+
+  .navbar {
+    .navbar-nav.active {
+      right: 0;
+    }
+  }
+}
+
+@media (max-width: 450px) {
+  html {
+    font-size: 55%;
+  }
+}
+
+// mobile
