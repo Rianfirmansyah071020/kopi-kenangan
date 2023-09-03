@@ -230,6 +230,100 @@ body {
       .menu-card-title {
         margin-top: 1rem 0.5rem;
       }
+
+      .menu-card-img {
+        transition: 0.2s;
+      }
+
+      .menu-card-img:hover {
+        opacity: 1;
+        box-shadow: 5px 5px 5px 2px rgba(255, 255, 255, 0.8);
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+// section contact
+.contact {
+  padding: 8rem 7% 1.4rem;
+
+  h2 {
+    text-align: center;
+    font-size: 3rem;
+    margin-bottom: 1rem;
+
+    span {
+      color: var(--primary);
+    }
+  }
+
+  p {
+    text-align: center;
+    max-width: 30rem;
+    margin: auto;
+    font-weight: 100;
+    line-height: 1.6;
+  }
+
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 2rem;
+    background-color: #222;
+
+    .card-maps {
+      flex: 1 1 45rem;
+      opacity: 0.5;
+      transition: 0.3s;
+      width: 100%;
+      object-fit: cover;
+
+      .maps {
+        width: 100%;
+      }
+    }
+
+    .card-maps:hover {
+      opacity: 0.7;
+    }
+
+    .card-form-contact {
+      flex: 1 1 45rem;
+      padding: 5rem 2rem;
+      text-align: center;
+
+      .form-group {
+        display: flex;
+        align-items: center;
+        margin-top: 2rem;
+        background-color: var(--bg);
+        border: 1px solid #eee;
+        padding-left: 2rem;
+
+        input {
+          width: 100%;
+          padding: 0.7rem;
+          font-size: 1.3rem;
+          background: none;
+          color: #eee;
+        }
+
+        input::placeholder {
+          color: #d3d1d1;
+          font-size: 1.3rem;
+        }
+      }
+    }
+
+    .btn {
+      margin-top: 3rem;
+      display: inline-block;
+      padding: 1rem 3rem;
+      font-size: 1.3rem;
+      cursor: pointer;
+      color: #eee;
+      background-color: var(--primary);
     }
   }
 }
@@ -245,7 +339,9 @@ body {
   .menu-card-img {
     border-radius: 50%;
     width: 200px;
+    height: 200px;
     object-fit: cover;
+    opacity: 0.7;
     object-position: center;
   }
 }
@@ -320,6 +416,8 @@ body {
   .menu-card-img {
     border-radius: 50%;
     width: 150px;
+    height: 150px;
+    opacity: 0.7;
     object-fit: cover;
     object-position: center;
   }
@@ -344,6 +442,8 @@ body {
   .menu-card-img {
     border-radius: 50%;
     width: 70px;
+    height: 70px;
+    opacity: 0.7;
     object-fit: cover;
     object-position: center;
   }
