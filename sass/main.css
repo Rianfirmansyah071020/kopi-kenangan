@@ -144,10 +144,10 @@ body {
 }
 .about .row .about-img .card-about-img {
   border-radius: 50%;
-  -webkit-mask: url("../assets/images/kopi-love.png");
-          mask: url("../assets/images/kopi-love.png");
-  -webkit-mask-size: 50%;
-          mask-size: 50%;
+  -webkit-mask: url("../assets/images/splash.svg");
+          mask: url("../assets/images/splash.svg");
+  -webkit-mask-size: 57%;
+          mask-size: 57%;
   -webkit-mask-position: center;
           mask-position: center;
   -webkit-mask-repeat: no-repeat;
