@@ -152,6 +152,7 @@ body {
 // about section
 .about {
   padding: 8rem 7% 1.4rem;
+  transition: 0.3s;
 
   h2 {
     text-align: center;
@@ -193,12 +194,59 @@ body {
   }
 }
 
+// section menu
+.menu {
+  padding: 8rem 7% 1.4rem;
+  transition: 0.3s;
+
+  h2 {
+    text-align: center;
+    font-size: 3rem;
+    margin-bottom: 1rem;
+
+    span {
+      color: var(--primary);
+    }
+  }
+
+  p {
+    text-align: center;
+    max-width: 30rem;
+    margin: auto;
+    font-weight: 100;
+    line-height: 1.6;
+  }
+
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 5rem;
+    justify-content: center;
+
+    .menu-card {
+      text-align: center;
+      padding: 2rem;
+
+      .menu-card-title {
+        margin-top: 1rem 0.5rem;
+      }
+    }
+  }
+}
+
 // media Queries
 
 // laptop
 @media (max-width: 1366px) {
   html {
     font-size: 75%;
+  }
+
+  .menu-card-img {
+    border-radius: 50%;
+    width: 200px;
+    object-fit: cover;
+    object-position: center;
   }
 }
 
@@ -268,11 +316,36 @@ body {
       }
     }
   }
+
+  .menu-card-img {
+    border-radius: 50%;
+    width: 150px;
+    object-fit: cover;
+    object-position: center;
+  }
+
+  .menu {
+    p {
+      text-align: center;
+      max-width: 30rem;
+      font-size: 1.2rem;
+      margin: auto;
+      font-weight: 100;
+      line-height: 1.6;
+    }
+  }
 }
 
 @media (max-width: 450px) {
   html {
     font-size: 55%;
+  }
+
+  .menu-card-img {
+    border-radius: 50%;
+    width: 70px;
+    object-fit: cover;
+    object-position: center;
   }
 }
 
